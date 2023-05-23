@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+
+		<title>Ejercicio Grupal 1</title>
+	</head>
+	<body>
+		<main class="container">
+			<div class="row mt-5">
+				<section class="col">
+					<form id="agregarProyecto">
+						<div class="form-floating mb-3">
+							<input
+								type="text"
+								class="form-control"
+								id="nombreProyecto"
+								name="nombreProyecto"
+								placeholder="Nombre Proyecto"
+								required
+							/>
+							<label for="nombreProyecto">Nombre Proyecto</label>
+						</div>
+
+						<button class="btn btn-success" type="submit">
+							Añadir Proyecto
+						</button>
+					</form>
+				</section>
+
+				<section class="col">
+					<form id="agregarTrabajador">
+						<div class="form-floating mb-3">
+							<select
+								class="form-select"
+								name="proyecto"
+								id="proyecto"
+								required
+							>
+								<option selected disabled value="0">
+									Seleccione un proyecto
+								</option>
+							</select>
+							<label for="proyecto">Seleccione un proyecto</label>
+						</div>
+
+						<div class="form-floating mb-3">
+							<input
+								class="form-control"
+								type="text"
+								id="nombreTrabajador"
+								name="nombreTrabajador"
+								placeholder="Nombre Trabajador"
+								required
+							/>
+							<label for="nombreTrabajador">Nombre Trabajador</label>
+						</div>
+
+						<div class="form-floating mb-3">
+							<input
+								class="form-control"
+								type="text"
+								id="rutTrabajador"
+								name="rutTrabajador"
+								placeholder="Rut Trabajador"
+								required
+							/>
+							<label for="rutTrabajador">RUT Trabajador</label>
+						</div>
+
+						<div class="form-floating mb-3">
+							<input
+								class="form-control"
+								type="text"
+								id="cargoTrabajador"
+								name="cargoTrabajador"
+								placeholder="Cargo Trabajador"
+								required
+							/>
+							<label for="cargoTrabajador">Cargo Trabajador</label>
+						</div>
+
+						<button class="btn btn-success" type="submit">
+							Añadir Trabajador
+						</button>
+					</form>
+				</section>
+			</div>
+
+			<div id="tablas"></div>
+		</main>
+
+		<script src="assets/js/bootstrap.min.js"></script>
+		<script type="module" src="assets/js/main.js"></script>
+	</body>
+</html>
